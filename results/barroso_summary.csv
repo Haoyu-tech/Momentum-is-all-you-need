@@ -1,0 +1,10 @@
+period,strategy,months,annualized_mean_return,annualized_volatility,sharpe,skewness,excess_kurtosis,worst_month,max_drawdown
+Paper window: 1927-03 to 2011-12,Unmanaged momentum,1016,0.148597,0.274227,0.541876,-2.388344,18.044261,-0.7766,-0.955552
+Paper window: 1927-03 to 2011-12,Risk-managed momentum,1016,0.166949,0.167652,0.99581,-0.355768,2.013999,-0.241608,-0.438301
+Paper window: 1927-03 to 2011-12,Market excess return,1016,0.073769,0.190248,0.387754,0.212616,7.488928,-0.2874,-0.846341
+Extension: 2012-01 onward,Unmanaged momentum,176,0.05698,0.288861,0.197256,-0.687657,2.193907,-0.3208,-0.647733
+Extension: 2012-01 onward,Risk-managed momentum,176,0.04577,0.122215,0.374501,-0.002594,1.11626,-0.125235,-0.230334
+Extension: 2012-01 onward,Market excess return,176,0.135702,0.144792,0.937222,-0.390082,1.033521,-0.1337,-0.25276
+Full sample,Unmanaged momentum,1192,0.135069,0.276471,0.488549,-2.103584,15.168149,-0.7766,-0.955552
+Full sample,Risk-managed momentum,1192,0.149057,0.16218,0.919083,-0.294826,2.048245,-0.241608,-0.438301
+Full sample,Market excess return,1192,0.082914,0.184299,0.449886,0.155259,7.348552,-0.2874,-0.846341

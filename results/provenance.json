@@ -1,0 +1,190 @@
+{
+  "prepared_on": "2026-10-14",
+  "owner": "Haoyu-tech",
+  "origin": "MOM research module from the local hk_quant project",
+  "strategy_changes": "None; CRSP source paths made configurable.",
+  "files": [
+    {
+      "file": "results/final_summary.csv",
+      "source_filename": "final_summary.csv",
+      "source_sha256": "3e22e6489ce6902bdd03c0952d0ce12e21969a63a19d4dee933e8074bf7e3c99",
+      "rows": 7,
+      "columns": [
+        "strategy",
+        "annualized_mean_return",
+        "annualized_volatility",
+        "sharpe",
+        "max_drawdown",
+        "skewness",
+        "terminal_wealth",
+        "mean_return_t_stat"
+      ]
+    },
+    {
+      "file": "results/final_daily.csv.gz",
+      "source_filename": "final_daily.csv",
+      "source_sha256": "306bad6085141c90c1a2439c111aefbc610128453ff8c499c261fe75768cd30e",
+      "rows": 17008,
+      "columns": [
+        "date",
+        "Top 10 stocks (VW)",
+        "Top decile (VW)",
+        "Top decile (EW)",
+        "Winner-minus-loser (VW)",
+        "Top decile (VW), 19% vol target",
+        "Top decile (EW), 19% vol target",
+        "Historical S&P 500 universe (EW)"
+      ]
+    },
+    {
+      "file": "results/barroso_summary.csv",
+      "source_filename": "barroso_summary.csv",
+      "source_sha256": "7ea065c91d90f5960dc45f412a5ce04e3fc4835c78571a0234a8006cb3123683",
+      "rows": 9,
+      "columns": [
+        "period",
+        "strategy",
+        "months",
+        "annualized_mean_return",
+        "annualized_volatility",
+        "sharpe",
+        "skewness",
+        "excess_kurtosis",
+        "worst_month",
+        "max_drawdown"
+      ]
+    },
+    {
+      "file": "results/barroso_monthly.csv",
+      "source_filename": "barroso_monthly.csv",
+      "source_sha256": "1cb4cfde987b5237c055091a44a9b4c8a63683e8c26bd9d27a9103cff3a89925",
+      "rows": 1196,
+      "columns": [
+        "month",
+        "wml",
+        "mkt",
+        "rf",
+        "sigma",
+        "weight",
+        "managed"
+      ]
+    },
+    {
+      "file": "results/capacity_summary.csv",
+      "source_filename": "capacity_summary.csv",
+      "source_sha256": "29f45b09f77ea61441d5a76711325cdd5eb78b8826b8113fddf24d9ccb6b2dc9",
+      "rows": 4,
+      "columns": [
+        "period",
+        "rebalances",
+        "median_bottleneck_capacity",
+        "q25_bottleneck_capacity",
+        "median_aggregate_capacity",
+        "median_bottleneck_2025_usd",
+        "median_holdings_adv",
+        "median_turnover",
+        "median_leverage"
+      ]
+    },
+    {
+      "file": "results/capacity_series.csv",
+      "source_filename": "capacity_series.csv",
+      "source_sha256": "5b973fdce0b895af8e5d703acf4adfa391c8949c02c31fe7544e33f4e9c10a6c",
+      "rows": 811,
+      "columns": [
+        "rebalance_date",
+        "stocks_changed",
+        "leverage",
+        "turnover",
+        "bottleneck_capacity",
+        "aggregate_capacity",
+        "median_holdings_adv",
+        "min_holdings_adv",
+        "bottleneck_capacity_2025_usd",
+        "aggregate_capacity_2025_usd"
+      ]
+    },
+    {
+      "file": "results/benchmark_value.csv.gz",
+      "source_filename": "benchmark_value.csv",
+      "source_sha256": "fcb7084cd489b760a2a5b14e3dede075699304e795b9f7f57d2bd0e2e83b7091",
+      "rows": 17240,
+      "columns": [
+        "date",
+        "市值加权基准"
+      ]
+    }
+  ],
+  "source_files": [
+    {
+      "path": "why/mom/barroso.py",
+      "original_sha256": "5b8a3a71d6116e11944034b3fb1a8fa8184b91225cd45831e1c0efe210e4f125"
+    },
+    {
+      "path": "why/mom/breadth.py",
+      "original_sha256": "f7703b82d3863a9fe90ff4de150eba491f5e5eebb07056ecf1a32c329a1443a4"
+    },
+    {
+      "path": "why/mom/capacity.py",
+      "original_sha256": "d0a2411175adffec968d4545eca5ee35cc1f2c61c335aadb11ee7f193e7f8209"
+    },
+    {
+      "path": "why/mom/crsp.py",
+      "original_sha256": "9bdc9fcd64df1a0cc64f8dd38dcb67c9af7ce21a9f40c96cb99f197c8e68cb25"
+    },
+    {
+      "path": "why/mom/final.py",
+      "original_sha256": "10d1503995770ed77700cc335dc09b16d57b4bfbf0d5558809a4fdb84b4ece48"
+    },
+    {
+      "path": "why/mom/hedge.py",
+      "original_sha256": "5eef1b1ec00709bec68e794b689b8e494bdf98b5b60f95f8f21aa63024207ffe"
+    },
+    {
+      "path": "why/mom/momentum.py",
+      "original_sha256": "e93c8fb60b1eb7209e300f036dbf764570c51ae700346f06dcb25caead4c1352"
+    },
+    {
+      "path": "why/mom/overlay.py",
+      "original_sha256": "2c7476ef5c255f13de2ce9197ad3356c697a126c08d5ce9a811bb555b2db8b11"
+    },
+    {
+      "path": "why/mom/plot_momentum.py",
+      "original_sha256": "308957effae9ddbe8423503b93ec1fbc68365de6f78b67bb7f6a6caa0c482cc4"
+    },
+    {
+      "path": "why/mom/universe.py",
+      "original_sha256": "ce50f91996943fec16f84183d4aa4a7aa89618b49bf06ac6ad578a3e78ed5f7b"
+    },
+    {
+      "path": "why/mom/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "why/mom/tests/test_barroso.py",
+      "original_sha256": "32592f5734855f7a4d6ce84a73aee30e080c3e4d6116ee2e6b1cbf3e5a4146d9"
+    },
+    {
+      "path": "why/mom/tests/test_breadth.py",
+      "original_sha256": "0521e5608c5412777e99806fbb241c4060ce7b1df48df61b69cc37a78006880e"
+    },
+    {
+      "path": "why/mom/tests/test_capacity.py",
+      "original_sha256": "8f2e43f140c969d1c73b52cae3c07a000de1459605f2b5f82b34015a0da40908"
+    },
+    {
+      "path": "why/mom/tests/test_momentum.py",
+      "original_sha256": "da818926b0225e6b9d084eedee64952abc24a9d0a3d6b8620965432a8f4dc3c9"
+    },
+    {
+      "path": "why/mom/tests/test_overlay.py",
+      "original_sha256": "96e962482fa0b738a2f8fc0d2a1f436076289b9b3fa8d9cc2dbc87cf563e9be9"
+    },
+    {
+      "path": "why/mom/tests/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "raw_data_included": false,
+  "note": "Published result tables are existing research outputs, translated to English. No full stock-level backtest was rerun during packaging."
+}

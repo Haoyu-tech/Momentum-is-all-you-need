@@ -1,0 +1,18 @@
+# Local environments and credentials
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+# Python runtime files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+# Licensed/raw market data and local caches
+/why/data/
+/data/
+*.parquet
+*.zip
+# Platform files
+.DS_Store
+Thumbs.db
